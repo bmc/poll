@@ -34,3 +34,4 @@ Linking:
 	force use of "libpoll.a":
 
 		cc -o mypollprog mypollprog.o -L/usr/local/lib -lpoll -static
+---------------------------------------------------------------------------
