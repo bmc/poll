@@ -19,7 +19,7 @@ I have successfully compiled it on:
 In addition, Benjamin Reed <ranger@befunk.com> has supplied the necessary
 Makefile changes to build it on:
 
-	Mac OS/X (Darwin)
+	Mac OS X (Darwin)
 
 This software is released under a Berkeley-style license:
 

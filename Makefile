@@ -25,7 +25,7 @@ SHLIB		= $(LIB_NAME).$(SHLIB_EXT).$(VERSION)
 SHLIB_INSTALLED = $(LIBDIR)/$(LIB_NAME).$(SHLIB_EXT).$(MAJOR)
 
 # Benjamin Reed <ranger@befunk.com>:
-# On Mac OS/X, comment out the above lines, and uncomment these instead.
+# On Mac OS X, comment out the above lines, and uncomment these instead.
 #LINK_SHARED	= $(CC) -install_name $(PREFIX)/lib/$(SHLIB) \
 #			-compatibility_version $(COMPAT_VERSION) \
 #			-current_version $(VERSION) -dynamiclib
