@@ -1,12 +1,11 @@
 $Id$
 ---------------------------------------------------------------------------
-This package implements the System V poll(2) system call for BSD systems
-(which typically do not provide poll()).  Poll() provides a method for
+This package implements the System V poll(2) system call for Unix-like
+systems that do not provide poll(). Poll() provides a method for
 multiplexing input and output on multiple open file descriptors; in
-traditional BSD systems, that capability is provided by select().  While
-the semantics of select() differ from those of poll(), poll() can be
-readily emulated in terms of select() -- which is how this function is
-implemented.
+traditional BSD systems, that capability is provided by select(). While the
+semantics of select() differ from those of poll(), poll() can be readily
+emulated in terms of select() -- which is how this function is implemented.
 
 Brief documentation on this emulation can be found at the top of the
 "poll.h" header file.  For a full description of poll(), consult W. Richard
