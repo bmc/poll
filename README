@@ -14,12 +14,15 @@ The software should compile on most BSD UNIX systems without modification.
 I have successfully compiled it on:
 
 	BSD/OS (BSDI) 1.1, 2.0, 2.1
-	FreeBSD 2.1.0 through 4.3-RELEASE
+	FreeBSD 2.1.0 through 4.8-RELEASE
 
-In addition, Benjamin Reed <ranger@befunk.com> has supplied the necessary
-Makefile changes to build it on:
+In addition:
 
-	Mac OS X (Darwin)
+- Benjamin Reed <ranger@befunk.com> has supplied the necessary
+  Makefile changes to build it on Mac OS X (Darwin)
+
+- Sven Fischer <fischer@deutaeit.de> informed me, via email, that it works,
+  without change, on QNX 6
 
 This software is released under a Berkeley-style license:
 
@@ -55,5 +58,4 @@ The latest version of this software is available at
 ---------------------------------------------------------------------------
 Brian M. Clapper
 bmc@clapper.org
-30 Sep 2002
-
+06 Oct 2003
