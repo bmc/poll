@@ -27,16 +27,45 @@
 	differ from those of poll(), poll() can be readily emulated in terms
 	of select() -- which is how this function is implemented.
 
-  AUTHOR
-	Brian M. Clapper
-	Wills Creek Software, Inc.
-	bmc@WillsCreek.COM
-
   REFERENCES
 	Stevens, W. Richard. Unix Network Programming.  Prentice-Hall, 1990.
 
   NOTES
 	1. This software requires an ANSI C compiler.
+
+  LICENSE
+
+	This software is released under a Berkeley-style license:
+
+		Copyright (c) 1995-1997 Brian M. Clapper
+		All rights reserved.
+
+		Redistribution and use in source and binary forms are
+		permitted provided that: (1) source distributions retain
+		this entire copyright notice and comment; (2) modifications
+		made to the software are prominently mentioned, and a copy
+		of the original software (or a pointer to its location) are
+		included; and (3) distributions including binaries display
+		the following acknowledgement: ``This product includes
+		software developed by Brian M. Clapper
+		<bmc@WillsCreek.COM>'' in the documentation or other
+		materials provided with the distribution and in all
+		advertising materials mentioning features or use of this
+		software.  The name of the author may not be used to
+		endorse or promote products derived from this software
+		without specific prior written permission.
+
+		THIS SOFTWARE IS PROVIDED ``AS IS'' AND WITHOUT ANY EXPRESS
+		OR IMPLIED WARRANTIES, INCLUDING, WITHOUT LIMITATION, THE
+		IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A
+		PARTICULAR PURPOSE.
+
+	Effectively, this means you can do what you want with the software
+	except remove this notice or take advantage of the author's name.
+	If you modify the software and redistribute your modified version,
+	you must indicate that your version is a modification of the
+	original, and you must provide either a pointer to or a copy of the
+	original.
 \*---------------------------------------------------------------------------*/
 
 
