@@ -15,8 +15,7 @@ The software should compile on most BSD UNIX systems without modification.
 I have successfully compiled it on:
 
 	BSD/OS (BSDI) 1.1, 2.0, 2.1
-	FreeBSD 2.1.0 through 2.2.2
-	Linux 1.2.x
+	FreeBSD 2.1.0 through 3.1
 
 This software is released under a Berkeley-style license:
 
@@ -46,6 +45,11 @@ remove this notice or take advantage of the author's name.  If you modify
 the software and redistribute your modified version, you must indicate that
 your version is a modification of the original, and you must provide either
 a pointer to or a copy of the original.
+
+The latest version of this software is available at
+
+	http://www.WillsCreek.com/software/poll/
+
 ---------------------------------------------------------------------------
 Brian M. Clapper
 bmc@WillsCreek.COM
