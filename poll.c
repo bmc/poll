@@ -109,7 +109,7 @@ static int map_poll_spec
 {
     register unsigned long  i;                   /* loop control */
     register struct	    pollfd *pCur;        /* current array element */
-    register int	    max_fd = 0;          /* return value */
+    register int	    max_fd = -1;         /* return value */
 
     /*
        Map the poll() structures into the file descriptor sets required
@@ -117,6 +117,11 @@ static int map_poll_spec
     */
     for (i = 0, pCur = pArray; i < n_fds; i++, pCur++)
     {
+        /* Skip any bad FDs in the array. */
+
+        if (pCur->fd < 0)
+            continue;
+
 	if (pCur->events & POLLIN)
 	{
 	    /* "Input Ready" notification desired. */
@@ -225,6 +230,11 @@ static void map_select_results
 
     for (i = 0, pCur = pArray; i < n_fds; i++, pCur++)
     {
+        /* Skip any bad FDs in the array. */
+
+        if (pCur->fd < 0)
+            continue;
+
 	/* Exception events take priority over input events. */
 
 	pCur->revents = 0;
