@@ -17,6 +17,11 @@ I have successfully compiled it on:
 	BSD/OS (BSDI) 1.1, 2.0, 2.1
 	FreeBSD 2.1.0 through 4.3-RELEASE
 
+In addition, Benjamin Reed <ranger@befunk.com> has supplied the necessary
+Makefile changes to build it on:
+
+	Mac OS/X (Darwin)
+
 This software is released under a Berkeley-style license:
 
 	Copyright (c) 1995-2002 Brian M. Clapper
@@ -51,4 +56,5 @@ The latest version of this software is available at
 ---------------------------------------------------------------------------
 Brian M. Clapper
 bmc@clapper.org
-11 May 2002
+30 Sep 2002
+
