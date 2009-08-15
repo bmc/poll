@@ -15,7 +15,7 @@ The software should compile on most BSD UNIX systems without modification.
 I have successfully compiled it on:
 
 	BSD/OS (BSDI) 1.1, 2.0, 2.1
-	FreeBSD 2.1.0 through 4.8-RELEASE
+	FreeBSD 2.1.0 through 4.11-RELEASE
         Mac OS X 10.4 (Tiger)
 
 

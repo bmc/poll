@@ -37,7 +37,7 @@ Linking:
 POSSIBLE ISSUES
 ---------------
 
-1. John Gilmore (gnu@toad.com) encountered a linking problem on Mac OS X
+1. John Gilmore <gnu@toad.com> encountered a linking problem on Mac OS X
    10.5 (Leopard). Note that I have not seen this problem on my 10.4
    (Tiger) Mac:
 
