@@ -1,5 +1,6 @@
-$Id$
----------------------------------------------------------------------------
+INTRODUCTION
+------------
+
 This package implements the System V poll(2) system call for Unix-like
 systems that do not provide poll(). Poll() provides a method for
 multiplexing input and output on multiple open file descriptors; in
@@ -15,47 +16,44 @@ I have successfully compiled it on:
 
 	BSD/OS (BSDI) 1.1, 2.0, 2.1
 	FreeBSD 2.1.0 through 4.8-RELEASE
+        Mac OS X 10.4 (Tiger)
 
-In addition:
 
-- Benjamin Reed <ranger@befunk.com> has supplied the necessary
-  Makefile changes to build it on Mac OS X (Darwin)
+BUILDING
+--------
+
+See the INSTALL file that accompanies the source distribution.
+
+
+ACKNOWLEDGMENTS
+---------------
+
+- Benjamin Reed <ranger@befunk.com> has supplied the initial Makefile
+  changes to build libpoll on Mac OS X (Darwin).
 
 - Sven Fischer <fischer@deutaeit.de> informed me, via email, that it works,
   without change, on QNX 6
 
-This software is released under a Berkeley-style license:
+- John Gilmore <gnu@toad.com> reported some linkage errors on Mac OS X,
+  suggested the addition of the nfds_t typedef, and suggested a revised
+  license.
 
-	Copyright (c) 1995-2002 Brian M. Clapper
-	All rights reserved.
 
-	Redistribution and use in source and binary forms are permitted
-	provided that: (1) source distributions retain this entire
-	copyright notice and comment; (2) modifications made to the
-	software are prominently mentioned, and a copy of the original
-	software (or a pointer to its location) are included; and (3)
-	distributions including binaries display the following
-	acknowledgement: "This product includes software developed by Brian
-	M. Clapper <bmc@clapper.org>" in the documentation or other
-	materials provided with the distribution. The name of the author
-	may not be used to endorse or promote products derived from this
-	software without specific prior written permission.
+LICENSE
+-------
 
-	THIS SOFTWARE IS PROVIDED ``AS IS'' AND WITHOUT ANY EXPRESS OR
-	IMPLIED WARRANTIES, INCLUDING, WITHOUT LIMITATION, THE IMPLIED
-	WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.
+This software is released under a BSD license. See the accompanying LICENSE
+file for details.
 
-Effectively, this means you can do what you want with the software except
-remove this notice or take advantage of the author's name.  If you modify
-the software and redistribute your modified version, you must indicate that
-your version is a modification of the original, and you must provide either
-a pointer to or a copy of the original.
+
+UPDATES
+-------
 
 The latest version of this software is available at
 
 	http://www.clapper.org/software/poll/
 
----------------------------------------------------------------------------
+
 Brian M. Clapper
 bmc@clapper.org
-06 Oct 2003
+14 August, 2009

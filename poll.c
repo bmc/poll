@@ -94,22 +94,22 @@
 static int map_poll_spec
 #if __STDC__ > 0
 			(struct pollfd *pArray,
-			  unsigned long  n_fds,
+                         nfds_t         n_fds,
 			  fd_set        *pReadSet,
 			  fd_set        *pWriteSet,
 			  fd_set        *pExceptSet)
 #else
 			 (pArray, n_fds, pReadSet, pWriteSet, pExceptSet)
 			  struct pollfd *pArray;
-			  unsigned long  n_fds;
+			  nfds_t         n_fds,
 			  fd_set        *pReadSet;
 			  fd_set        *pWriteSet;
 			  fd_set        *pExceptSet;
 #endif
 {
-    register unsigned long  i;                   /* loop control */
-    register struct	    pollfd *pCur;        /* current array element */
-    register int	    max_fd = -1;         /* return value */
+    register nfds_t  i;                      /* loop control */
+    register struct  pollfd *pCur;           /* current array element */
+    register int     max_fd = -1;            /* return value */
 
     /*
        Map the poll() structures into the file descriptor sets required

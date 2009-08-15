@@ -1,7 +1,5 @@
-$Id$
----------------------------------------------------------------------------
-
-			  Building and installing
+BUILDING AND INSTALLING
+-----------------------
 
 1) Edit the Makefile, adjusting any necessary definitions. Pay specific
    attention to the value of PREFIX and the compiler settings.
@@ -11,7 +9,8 @@ $Id$
    in $(PREFIX)/include (default: /usr/local/include)
 
 
-			  Using the poll emulator
+USING THE POLL EMULATOR
+-----------------------
 
 Compiling:
 
@@ -34,4 +33,30 @@ Linking:
 	force use of "libpoll.a":
 
 		cc -o mypollprog mypollprog.o -L/usr/local/lib -lpoll -static
+
+POSSIBLE ISSUES
+---------------
+
+1. John Gilmore (gnu@toad.com) encountered a linking problem on Mac OS X
+   10.5 (Leopard). Note that I have not seen this problem on my 10.4
+   (Tiger) Mac:
+
+       We couldn't merely compile our code and link it with poll.c and have
+       it work; we got a conflict with the system library:
+
+       /usr/bin/ld: warning multiple definitions of symbol _poll
+       /var/tmp//ccSgmsaN.o definition of _poll in section (__TEXT,__text)
+       /usr/lib/gcc/powerpc-apple-darwin8/4.0.0/../../../libSystem.dylib(poll.So) definition of _poll
+
+       Instead we added -Dpoll=myfakepoll when compiling routines that call
+       poll(), and when compiling poll.c itself, so there'd be no name
+       conflict.
+
+   If you encounter this problem:
+
+   a) Uncomment the POLL_RENAME definition in the Makefile, rebuild the
+      poll emulator library, and reinstall it.
+   b) Be sure to add -Dpoll=pollemu to the C compilation command line for
+      any program you write that uses the poll emulator.
+
 ---------------------------------------------------------------------------
