@@ -12,7 +12,7 @@ piece of software does.
 Brief documentation on this emulation can be found at the top of the
 `poll.h` header file. Also, see the [home page][] for more details.
 
-[home page][]: http://bmc.github.com/poll
+[home page]: http://bmc.github.com/poll
 
 ## Building
 
