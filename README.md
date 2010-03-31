@@ -23,7 +23,7 @@ See the [home page][] for details.
 This software is copyright &copy; 1995—2010 Brian M. Clapper, and is released
 under a BSD license. See the [license][] file for complete details.
 
-[license]: http://bmc.github.com/license.html
+[license]: http://bmc.github.com/poll/license.html
 
 ## Author
 
