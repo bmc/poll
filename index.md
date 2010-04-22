@@ -137,6 +137,17 @@ under a BSD license. See the [license][] file for complete details.
 
 ## Author
 
-Brian M. Clapper, [bmc /at/ clapper.org][]
+[Brian M. Clapper][]
 
-[bmc /at/ clapper.org]: mailto:bmc@clapper.org
+## Patches
+
+I gladly accept patches from their original authors. Feel free to email
+patches to me or to fork the [GitHub repository][] and send me a pull
+request. Along with any patch you send:
+
+* Please state that the patch is your original work.
+* Please indicate that you license the work to the *Poll Emulator*
+  project under a [BSD License][license].
+
+[GitHub repository]: http://github.com/bmc/poll
+[Brian M. Clapper]: mailto:bmc@clapper.org
