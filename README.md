@@ -12,7 +12,7 @@ piece of software does.
 Brief documentation on this emulation can be found at the top of the
 `poll.h` header file. Also, see the [home page][] for more details.
 
-[home page]: http://bmc.github.com/poll
+[home page]: http://software.clapper.org/poll
 
 ## Building
 
@@ -23,7 +23,7 @@ See the [home page][] for details.
 This software is copyright &copy; 1995—2010 Brian M. Clapper, and is released
 under a BSD license. See the [license][] file for complete details.
 
-[license]: http://bmc.github.com/poll/license.html
+[license]: http://software.clapper.org/poll/license.html
 
 ## Author
 
