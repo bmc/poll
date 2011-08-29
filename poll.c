@@ -35,35 +35,37 @@
 
   LICENSE
 
-	This software is released under the following license:
+  This software is released under the following BSD license, adapted from
+  http://opensource.org/licenses/bsd-license.php
 
-		Copyright (c) 1995-2002 Brian M. Clapper
-		All rights reserved.
+  Copyright (c) 1995-2011, Brian M. Clapper
+  All rights reserved.
 
-		Redistribution and use in source and binary forms are
-		permitted provided that: (1) source distributions retain
-		this entire copyright notice and comment; (2) modifications
-		made to the software are prominently mentioned, and a copy
-		of the original software (or a pointer to its location) are
-		included; and (3) distributions including binaries display
-		the following acknowledgement: "This product includes
-		software developed by Brian M. Clapper <bmc@clapper.org>"
-		in the documentation or other materials provided with the
-		distribution. The name of the author may not be used to
-		endorse or promote products derived from this software
-		without specific prior written permission.
+  Redistribution and use in source and binary forms, with or without
+  modification, are permitted provided that the following conditions are met:
 
-		THIS SOFTWARE IS PROVIDED ``AS IS'' AND WITHOUT ANY EXPRESS
-		OR IMPLIED WARRANTIES, INCLUDING, WITHOUT LIMITATION, THE
-		IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A
-		PARTICULAR PURPOSE.
+  * Redistributions of source code must retain the above copyright notice,
+    this list of conditions and the following disclaimer.
 
-	Effectively, this means you can do what you want with the software
-	except remove this notice or take advantage of the author's name.
-	If you modify the software and redistribute your modified version,
-	you must indicate that your version is a modification of the
-	original, and you must provide either a pointer to or a copy of the
-	original.
+  * Redistributions in binary form must reproduce the above copyright
+    notice, this list of conditions and the following disclaimer in the
+    documentation and/or other materials provided with the distribution.
+
+  * Neither the name of the clapper.org nor the names of its contributors
+    may be used to endorse or promote products derived from this software
+    without specific prior written permission.
+
+  THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS
+  IS" AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO,
+  THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR
+  PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT HOLDER OR
+  CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL,
+  EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO,
+  PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR
+  PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF
+  LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING
+  NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS
+  SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 \*---------------------------------------------------------------------------*/
 
 
@@ -86,7 +88,6 @@
 #define MAX(a,b)	((a) > (b) ? (a) : (b))
 #endif
 
-
 /*---------------------------------------------------------------------------*\
 			     Private Functions
 \*---------------------------------------------------------------------------*/
@@ -148,7 +149,7 @@ static int map_poll_spec
 
     return max_fd;
 }
-
+
 static struct timeval *map_timeout
 #if __STDC__ > 0
 			(int poll_timeout, struct timeval *pSelTimeout)
@@ -208,7 +209,7 @@ static struct timeval *map_timeout
 
     return pResult;
 }
-
+
 static void map_select_results
 #if __STDC__ > 0
 			 (struct pollfd *pArray,
@@ -250,7 +251,7 @@ static void map_select_results
 
     return;
 }
-
+
 /*---------------------------------------------------------------------------*\
 			     Public Functions
 \*---------------------------------------------------------------------------*/
