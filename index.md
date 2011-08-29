@@ -56,8 +56,6 @@ There are two ways to get the source code:
 * Clone a copy of the Git repository:
 
         $ git clone git://github.com/bmc/poll.git
-        $ git clone http://github.com/bmc/pollfortune.git
-
 
 [downloads page]: http://github.com/bmc/poll/downloads
 
